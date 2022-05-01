@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#die1{
+    position: absolute;
+    top: -30%;
+    
+    text-align: center;
+}
+#die2{
+    position: absolute;
+    top: -30%;
+    width:100%;
+    text-align: center;
+}
+body{
+    min-height: 100vh;
+    width: 70%;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(90);
+    background-image: url("Programming Matrix Board.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: rgb(255, 255, 255);
+    padding: 0 8%;
+}
+
+/*button parameters*/
+
+button{
+    align-self: center;
+    background: #5559;
+    width:70px;
+    height: 25px;
+    color: #ffff;
+    font-family:Rog fonts;
+    border: 2px solid #0cf;
+    transition-duration: .4s;
+    cursor: pointer;
+}
+button:hover{
+    background: #5559;
+    width:70px;
+    height: 25px;
+    color: #ffff;
+    font-family:Rog fonts;
+    border: 2px solid #f2f;
+}
+#result{
+    position:absolute;
+    background-color:#7778;
+    font-family: Rog fonts;
+    width: 216px;
+    height: 40px;
+    border: 2px solid;
+}
+p{
+    margin: 4px;
+    font-family:'Courier New', Courier, monospace;
+}
+.dice1{
+    position: relative;
+    width: 104px;
+    height: 104px;
+    border: 2px solid #00caff;
+    text-align: center;
+    top: -40%;
+
+}
+.dice2{
+    position: relative;
+    width: 104px;
+    height: 104px;
+    border: 2px solid #00caff;
+    text-align: center;
+    top: -40%;
+}

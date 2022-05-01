@@ -1,0 +1,64 @@
+html {
+    min-height: 100%;
+}
+body{
+    background:linear-gradient(135deg, #000 30%, #444);
+    color: #fff;
+    font-family: monospace;
+}
+
+/*status bar customization*/
+
+.status {
+    display: grid;
+    margin: 4px;
+    border: 2px solid #fff;
+    width: 100px;
+    padding: 2px;
+} #stat {
+    width: 100px;
+    height: fit-content;
+    font-family: rog fonts;
+    color: rgb(000, 204, 255);
+    font-Variant: small-caps;
+} #statImage {
+    height: 100px;
+} #statDisplay {
+    height: fit-content;
+    color: #ff4fbf;
+    font-variant: normal;
+    font-family: monospace;
+} img{
+    width: 100px;
+    height: 100px;
+}
+
+/* Textbox + login customization */
+
+.textBox{
+    display:grid;
+    margin: 4px;
+    border: 2px solid #00c8ff;
+    padding: 2px;
+    background-color: #1f1f1f34;
+    color: #fff;
+    font-family: monospace;
+} #firstName {
+    width: 200px;
+} h2 {
+    font-family: arizone unicase regular;
+    color: #00c8ff;
+    font-variant: small-caps;
+} #lastName {
+    width: 200px;
+} #badgeNum {
+    width: 50px;
+} #btn1 {
+    margin: 4px;
+    border: 2px solid #c800ff;
+    padding: 2px;
+    background: #3337;
+    color: #fff;
+    font-family: monospace;
+    width: 59px;
+}
