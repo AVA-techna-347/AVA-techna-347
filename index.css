@@ -1,0 +1,38 @@
+html{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body{
+    background-image: url('MACS J0416 Galaxy Cluster.jpg');
+    background-size: 100%;
+} .header {
+    border: 4px inset #00c8ff;
+    background: #4447;
+    Padding: 4px;
+} h1, H2{
+    font-size: 35px;
+    font-family: Arizone unicase regular;
+    font-size: 15px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+} button {
+    width: 100px;
+    height: 20px;
+    border: 2px inset rgb(000, 200, 255);
+    background-image: linear-gradient(#444, #777);
+    
+    font-family: monospace;
+    color: white;
+}
+
+.body{
+    border: 4px inset #00c8ff;
+    background: #4447;
+} ol {
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: 20px;
+}
