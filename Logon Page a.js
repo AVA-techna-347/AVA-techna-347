@@ -24,7 +24,7 @@ function validation(){
                         //proccess to delay
 
                         alert("Welcome, Makayla");
-                        location.replace("website directory.html");
+                        location.replace("Website Directory.html");
                     }
                     currTime = currTime - 1;
                 }, 1000 * i);
