@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.A.T. Space Program</title>
+    <link rel='icon' type="image/png" href="U.A.T. Logo.png"/>
+    <link rel="stylesheet" href="UAT Space Program.css">
+    <link rel="stylesheet" href="sound test 5.css">
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="enterprise alarm edited.mp3" type="audio/mpeg">
+    </audio>
+    <div align="right">
+        <button onclick="window.location.href='craps.html'">Games</button>
+        <button onclick="window.location.href='Logon Page a.html'">Logon</button>
+    </div>
+    <div class="header" align="center">
+        <H1>U.A.T. Space Program Homepage</H1>
+    </div>
+    <div id="btnBorder">
+        <button id="play" onclick="playAudio()" type="button">Play</button>
+        <button id="stop" onclick="pauseAudio()" type="button" disabled="true">Pause</button>
+    </div>
+    <div class="body">
+        <H2>ROBOTICS AND EMBEDDED SYSTEMS DEGREE OBJECTIVES</H2>
+        <OL>
+            <LI>Design and complete robotic and embedded systems solutions that apply to real-world situations and challenges.</LI>
+            <LI>Implement a simple microprocessor using digital logic design.</LI>
+            <LI>Demonstrate embedded system design skills, including, but not limited to, microcontroller selection, schematic design, printed circuit board layout, design for electromagnetic compatibility and design for manufacturing.</LI>
+            <LI>Apply knowledge of transducers, actuators and simultaneous hardware and software development in the design of an embedded system.</LI>
+            <LI>Design and analyze real-time embedded systems, including advanced digital logic design, signal processing and highspeed digital systems.</LI>
+            <LI>Implement and evaluate algorithms and methods enabling autonomy in a mobile robot.</LI>
+        </OL>
+    </div>
+    
+    
+    
+</body>
+<script>
+    var audio = document.getElementById("myAudio");
+    
+    function playAudio() {
+        audio.loop = true;
+        audio.play();
+        
+        document.getElementById("play").disabled = true;
+        document.getElementById("stop").disabled = false;
+
+        document.getElementById("btnBorder").style.borderColor = "#c800ff";
+    }
+
+    function pauseAudio() {
+        audio.pause();
+
+        document.getElementById("play").disabled = false;
+        document.getElementById("stop").disabled = true;
+
+        document.getElementById("btnBorder").style.borderColor = "#00c8ff";
+    }
+</script>
+</html>
