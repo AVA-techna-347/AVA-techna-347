@@ -1,0 +1,65 @@
+html{min-height: 100%;}
+
+@font-face {
+    font-family: "modern monospace regular";
+    src: url("Resources/fonts/modern_monospace.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Primary body*/
+
+body{
+    background-image: linear-gradient(#000, #444);
+    color: #fff;
+    cursor: crosshair;
+}
+
+/*Table*/
+
+
+
+thead{
+    font-family: Arizone unicase regular;
+    font-size: 15px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} #tHead1 {
+    border: 1px inset #00c8ff;
+} #tHead2 {
+
+} #sector1 {
+    font-family: monospace;
+    background: -webkit-linear-gradient(#eee, #777);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} #sector2{
+    font-family: monospace;
+    background: -webkit-linear-gradient(#28ff28, #0a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} #tBody2 {
+    font-family: big pixel demo light;
+    background: -webkit-linear-gradient(#eee, #777);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} table {
+    border: 1px inset;
+    border-color: #aaa;
+}
+
+/*Button style*/
+
+input:enabled{
+    border: 3px inset #00c8ff;
+    color: #fff;
+    background-image: linear-gradient(#444, #777);
+    font-family: big pixel demo regular;
+} input:disabled {
+    border-color: #c700ff;
+    font-family: big pixel demo light;
+    color: #c700ff;
+    cursor: not-allowed;
+    background-image: linear-gradient(#444, #777);
+}
