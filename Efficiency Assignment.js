@@ -12,7 +12,7 @@ function countdown() {
 
                 //Status bar
 
-                document.getElementById("image2").innerHTML = '<img src = "Yellow warning icon.png" width="100">'
+                document.getElementById("image2").innerHTML = '<img src = "yellow warning icon.png" width="100">'
                 document.getElementById("display2").innerHTML = "Launched"
                 function delay(){
                     var currTime = 1;
@@ -35,9 +35,9 @@ function countdown() {
 
         } else if (i > 7) {
             setTimeout(function () {
-                document.getElementById("image1").innerHTML = '<img src="Yellow warning icon.png" width = "100px">';
+                document.getElementById("image1").innerHTML = '<img src="yellow warning icon.png" width = "100px">';
                 document.getElementById("display1").innerHTML = "!! Liftoff in T - " + cntDown + "s !!";
-                document.getElementById("image2").innerHTML = '<img src="Yellow warning icon.png" width = "100px" align="center">';
+                document.getElementById("image2").innerHTML = '<img src="yellow warning icon.png" width = "100px" align="center">';
                 document.getElementById("display2").innerHTML = "Warning: Half way to launch";
                 cntDown--;
             }, 1000 * i);
