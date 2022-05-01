@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Directory</title>
+    <style>
+        html {min-height: 100%;}
+        button{
+            width: 90px;
+            height: 20px;
+            background-color:#3d3d3d;
+            font-family: monospace;
+            font-size: 90%;
+            color: rgb(255, 255, 255);
+        } #btnEd2 {
+            border-style:solid;
+            border-color:#f0f;
+        } body {
+            background-image: radial-gradient(#222, #000);
+        } h1 {
+            font-variant:small-caps;
+            color: rgb(0, 200, 255)  
+        } #audio {
+            font-variant:small-caps;
+            color: rgb(0, 200, 255)
+
+        }h2{
+            font-variant:small-caps;
+            color: rgb(255, 255, 255)
+        }h3{
+            font-variant:small-caps;
+            color: rgb(100, 100, 100)
+        }
+
+        /*for the switch*/
+
+        .toggle {
+            position : relative ;
+            display: inline-block;
+            width: 70px;
+            height: 30px;
+            padding-top: 0px;
+            padding-bottom:7px;
+            border: 2px;
+            border-radius: 8px;
+            border-style: solid;
+            border-color: #ff00ff;
+        } .toggle:after {
+            content: '';
+            position: absolute;
+            width: 32px;
+            height: 30px;
+            border: 2px;
+            border-radius: 4px;
+            border-style: solid;
+            background-color: #444;
+            top: 2px;
+            left: 2px;
+            transition: all .7s;
+        } #TogText {
+            color: #fff;
+            font-family: monospace;
+            font-weight: lighter;
+        } .checkbox:checked + .toggle::after {
+            left : 32px;
+        } .checkbox:checked + .toggle {
+            border-color: #00c8ff;
+        } .checkbox {
+            display : none;
+        }
+    </style>
+</head>
+<body>
+    <!--This is a quote-->
+    <span id="AVA" ></span>
+    <font face="Arizone unicase regular">
+        <h1>Links to Follow</h1>
+        <!--Slider for image-->
+        <input type="checkbox" id="switch1" class="checkbox" />
+        <label for="switch1" class="toggle">
+            <center>
+                <p id="TogText">ON "OFF</p>
+            </center>
+        </label>
+        <BR>
+        <BR>
+        <input type="checkbox" id="switch2" class="checkbox"/>
+        <label for="switch2" class="toggle">
+            <center>
+                <p id="TogText">ON "OFF</p>
+            </center>
+        </label>
+        <!--program-->
+        <h2 id="audio">Music</h2>
+        <audio src="Fitz and the Tantrums - I Just Wanna Shine (lyrics) (320 kbps).mp3" id="myAudio"></audio>
+        <button id="musicStart" onclick="playMyAudio()">PLAY</button>
+        <h2>Makayla's Favorite Links</h2>
+
+        <button onclick="window.location.href='https://www.brickowl.com/';" id="lego 1">LEGO 1</button>
+        <br>
+        <br>
+        <button onclick="window.location.href='https://lushprojects.com/circuitjs/circuitjs.html';" id="btnProjects">Circuit 1</button>
+        <button onclick="window.location.href='https://everycircuit.com/';" id="btnProjects">Circuit 2</button>
+        <br>
+        <br>
+        <button onclick="window.location.href='https://www.pinterest.com/';">Pinterest</button>
+        <br>
+        <br>
+        <button onclick="window.location.href='https://www.khanacademy.org/';" id="btnEd1">Education 1</button>
+        <br>
+        <br>
+        <button onclick="window.location.href='https://www.desmos.com/calculator';" id="btnProjects">Graph 2D</button>
+        <button onclick="window.location.href='https://www.geogebra.org/3d';" id="btnProjects">Graph 3D</button>
+        <h2>Educational References</h2>
+        <button onclick="window.location.href='https://fs.uat.edu/adfs/ls/?SAMLRequest=fZLNbsIwEITvfYrI98QhhAIWIKWgqki0jSDtoZfKJBuw5NjUa%2Ffn7euEVqUHkHxaz7czu%2FYEeSMPLHN2r9bw5gBt8NlIhay7mBJnFNMcBTLFG0BmS7bJ7lcsiWJ2MNrqUktyglwmOCIYK7QiwXIxJa%2Fxtj%2BGcpCGvXRUhumwisPtcNwPR2PgdZ0ADNKUBM9g0DNT4lt4ENHBUqHlyvpSnCRhnPpTJDFLr1kcv5Bg4ecQituO2lt7QEZpjZHjNoLKUV7VSCVSEmS%2FieZaoWvAbMC8ixKe1qs%2FssWEdzSutM5AVOqGSr0TirYjkyD%2FWcSNUJVQu8s72B5FyO6KIg%2Fzx01BZpO2D%2BsmM7PW9YxpK0sm9FQ9Ob7gg%2FdZLnItRfkV3GrTcHs%2BRi%2FqdRVRhXUnZdBwIbOqMoDolyKl%2Fpgb4BamxAcAQmdH1%2F9fZXb1DQ%3D%3D';" id="btnEd2">U.A.T.</button>
+    </font>   
+</body>
+<script >
+    document.getElementById("switch1").onclick = function(){
+        if (this.checked){
+            document.getElementById("AVA").innerHTML = '<a href="https://www.bing.com/images/search?q=lego+ultramodern+houses&form=HDRSC3&first=1&tsc=ImageHoverTitle"><img id="AVAsexy" align="right" src="Screenshot_20210901-172853.png" width="400" height="auto"></a>';
+        } else {
+            document.getElementById("AVA").innerHTML = '';
+        }
+    }
+    var btn = document.getElementById("musicStart");
+    btn.addEventListener ("click", alertMe);
+    function alertMe(){
+        alert("I Just Wanna Shine");
+    }
+    function playMyAudio(){
+        document.getElementById("myAudio").play();
+    }
+    var lever = document.getElementById("switch");
+    function togImage(){
+        var togSwitch = document.getElementById("switch");
+    }
+    var btnFunction = function(input, Class, ID, name){
+        this.input = input;
+        this.Class = Class;
+        this.ID = ID;
+        this.name = name;
+    }; var Directory = function(url, Class, ID, name){
+        btnFunction.call(this, url, Class, ID, name);
+    }
+    Directory.prototype = Object.create(btnFunction.prototype);
+    Directory.prototype.assign = function(){
+        document.getElementById(this.ID);
+    }
+    
+</script>
+</html>
